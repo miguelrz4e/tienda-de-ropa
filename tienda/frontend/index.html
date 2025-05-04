@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    ul#lista-productos {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul#lista-productos li {
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Agregar nueva prenda</h2>
+  <form id="formulario-producto">
+    <input type="text" id="nombrePrenda" placeholder="Nombre de la prenda" required />
+    <input type="text" id="talla" placeholder="Talla (S, M, L, etc.)" required />
+    <input type="text" id="color" placeholder="Color" required />
+    <input type="number" id="precio" placeholder="Precio" required />
+    <input type="number" id="stock" placeholder="Stock" required />
+    <button type="submit">Agregar prenda</button>
+  </form>
+
+  <h2>Lista de prendas disponibles</h2>
+  <ul id="lista-productos"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>
